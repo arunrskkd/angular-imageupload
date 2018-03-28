@@ -1,0 +1,10 @@
+<app-addpart></app-addpart>
+<app-viewpart></app-viewpart>
+<div class="card ">
+    <input type="file" name="file" (change)="onfileselected($event)" [hidden]="true" #file>
+    <button (click)="file.click()">click</button>
+    <button class="btn btn-info" 
+    (click)="onupload()">Upload</button>
+
+
+</div>
